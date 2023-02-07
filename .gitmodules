@@ -4,3 +4,6 @@
 [submodule "packages/logger"]
 	path = packages/logger
 	url = https://github.com/Shirtiny/logger.git
+[submodule ".\\packages\\core"]
+	path = .\\packages\\core
+	url = https://github.com/Shirtiny/music-core.git
