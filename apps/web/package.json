@@ -14,7 +14,7 @@
     "react-dom": "^18.2.0",
     "ui": "*",
     "@shirtiny/utils": "*",
-    "@shirtiny/logger": "*"
+    "@shirtiny/logger": "^3.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",

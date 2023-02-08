@@ -1,6 +1,6 @@
 import { Button } from "ui";
+import logger from "@shirtiny/logger";
 import { math } from "@shirtiny/utils/src/main";
-import logger from "@shirtiny/logger/src/main";
 
 export default function Web() {
   return (

@@ -1,9 +1,6 @@
 [submodule "packages/utils"]
 	path = packages/utils
 	url = https://github.com/Shirtiny/utils.git
-[submodule "packages/logger"]
-	path = packages/logger
-	url = https://github.com/Shirtiny/logger.git
-[submodule ".\\packages\\core"]
-	path = .\\packages\\core
+[submodule "packages/core"]
+	path = packages/core
 	url = https://github.com/Shirtiny/music-core.git
