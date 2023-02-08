@@ -18,6 +18,17 @@
         ".next/**"
       ]
     },
+    "web#build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "env": [
+        "SOME_OTHER_ENV_VAR"
+      ],
+      "outputs": [
+        ".next/**"
+      ]
+    },
     "test": {
       "dependsOn": [
         "lint"
