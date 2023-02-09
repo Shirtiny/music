@@ -12,18 +12,23 @@ export interface IResData {
 }
 
 interface IApiRoute {
-  path: string;
   prefix: string;
+  path: string;
 }
 
 interface IApiRoutes {
-  BVCSP_V1: IApiRoute;
+  netease: IApiRoute;
+  manager: IApiRoute;
 }
 
 const API_ROUTES: IApiRoutes = {
-  BVCSP_V1: {
-    path: "/bvcsp/v1",
-    prefix: "",
+  netease: {
+    prefix: "https://netease.music-api.shirtiny.cn",
+    path: "",
+  },
+  manager: {
+    prefix: "https://manager.shirtiny.cn",
+    path: "/ap1/v1",
   },
 };
 
@@ -41,11 +46,8 @@ const setApiPrefix = (targetApiRoute: keyof IApiRoutes, prefix?: string) => {
 export const apiUrls = {
   setApiPrefix,
   getApiURL,
-  bvscpV1: () => getApiURL("BVCSP_V1"),
-};
-
-export const setBvcspV1ApiPrefix = (prefix?: string) => {
-  apiUrls.setApiPrefix("BVCSP_V1", prefix);
+  manager: () => getApiURL("manager"),
+  netease: () => getApiURL("netease"),
 };
 
 const apiVar = {
