@@ -11,7 +11,7 @@ const url = async (...ids: string[]) => {
   );
   logger.log(res);
   if (Array.isArray(res?.data)) {
-    return res.data.map((d: any) => d.url);
+    return res.data.map((d: any) => String(d.url).replace("http", "https"));
   }
 };
 
