@@ -23,11 +23,11 @@ interface IApiRoutes {
 
 const API_ROUTES: IApiRoutes = {
   netease: {
-    prefix: "https://netease.music-api.shirtiny.cn",
+    prefix: "https://netease.music-api.anror.com",
     path: "",
   },
   manager: {
-    prefix: "https://manager.shirtiny.cn",
+    prefix: "https://manager.anror.com",
     path: "/ap1/v1",
   },
 };
